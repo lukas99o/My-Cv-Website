@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("fonts/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Anta";
+    src: url("/fonts/Anta/Anta-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: url("/fonts/Oswald/static/Oswald-Regular.ttf")
+}
+
+body {
+    background-color: lightblue;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sidebar li {
+    list-style-type: none;
+    display: flex;
+}
+
+.sidebar a {
+    font-size: 1.5rem;
+    font-family: "Roboto";
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.sidebar a.active {
+    color: red;
+    font-size: 2rem;
+}
+
+.sidebar a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.container-sidebar {
+    display: flex;
+    height: 10vh;
+    background-color: black;
+    width: 100%;
+}

@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Roboto";
-    src: url("fonts/Roboto/Roboto-Regular.ttf");
+    src: url("/fonts/Roboto/Roboto-Regular.ttf");
 }
 
 @font-face {
@@ -27,13 +27,12 @@ body {
     padding: 0;
     display: flex;
     justify-content: space-around;
-    margin-top: 0px;
+    align-items: center;
 }
 
 .sidebar li {
     list-style-type: none;
     display: flex;
-    margin-top: 4vh;
 }
 
 .sidebar a {
@@ -46,6 +45,7 @@ body {
 
 .sidebar a.active {
     color: red;
+    font-size: 2rem;
 }
 
 .sidebar a:hover {
@@ -54,6 +54,7 @@ body {
 }
 
 .container-sidebar {
+    display: flex;
     height: 10vh;
     background-color: black;
     width: 100%;
@@ -67,6 +68,7 @@ body {
     border-radius: 3rem;
     border: solid 1px black;
     font-family: "Roboto";
+    font-weight: 600;
 }
 
 .content {
@@ -94,13 +96,14 @@ body {
 .content h2 {
     margin: 10px;
     margin-bottom: 30px;
+    font-family: "Anta";
 }
 
 .content p {
     text-align: left;
     margin-left: 10px;
     font-family: "Oswald";
-    font-size: medium;
+    font-size: large;
 }
 
 .content li {
