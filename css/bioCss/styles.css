@@ -1,0 +1,90 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("fonts/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Anta";
+    src: url("/fonts/Anta/Anta-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: url("/fonts/Oswald/static/Oswald-Regular.ttf")
+}
+
+body {
+    background-color: lightblue;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+}
+
+.sidebar {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.sidebar li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.sidebar a {
+    font-size: 1.5rem;
+    font-family: "Roboto";
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+}
+
+.sidebar a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+.sidebar a.active {
+    color: red;
+}
+
+.headlines {
+    text-align: center;
+    padding-top: 20px;
+    font-family: "Anta";
+}
+
+.text {
+    text-align: center;
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 600px;
+    font-size: larger;
+    font-family: "Oswald";
+}
+
+.pic1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 30px;
+    border: 5px solid black;
+}
+
+.pic2 {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid black;
+}
+
+

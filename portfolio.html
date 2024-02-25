@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="/css/portfolioStyles/styles.css">
+</head>
+<body>
+
+
+    <div class="container-sidebar">
+
+        <div>
+
+            <ul class="sidebar">
+                <li><a href="bio.html">Me</a></li>
+                <li><a href="cv.html">Cv</a></li>
+                <li><a class="active" href="portfolio.html">Portfolio</a></li>
+                <li><a href="certifications.html">Certifications</a></li>
+                <li><a href="contact-info.html">Contact Info</a></li>
+            </ul>
+
+        </div>
+
+    </div>
+
+        <h1 id="main-headline">Here is some of my projects!</h1>
+
+    <div class="content">
+
+        <div class="row1">
+            
+            <div class="modal-container">
+                <div class="modal">
+                  <label for="modal1-trigger">Close</label>
+                  <h2>Modal 1 Content</h2>
+                  <p>This is the content for Modal 1.</p>
+                </div>
+              </div>
+
+            <h2>Bank application (Group Project)</h2>
+            <p>
+                This is a group project we did at Chas Academy. Its a project where we for the first time
+                really got to learn how to use microsoft .net entityframework to do code first approach for 
+                our database. 
+            </p>
+
+            
+            
+            <br>
+            <button class="git" onclick="window.location.href='https://github.com/idris-ahmed19/Grupp-projekt'">Go To Github</button>
+            <br>
+            <button class="open-modal-button" onclick="document.getElementById('modal1').style.display='block'">More Information</button>
+            
+            <div id="modal1" class="modal">
+                <div class="modal-content">
+                  <span class="close" onclick="document.getElementById('modal1').style.display='none'">&times;</span>
+                  <h2>More information about the Bank Application</h2>
+                  
+                  <h3>Different things the application can do:</h3>
+
+                  <ul>
+                    <li>Admin login: Admins can create new users.</li>
+                    <li>Login system: Users can log in with their username and pin code and look over their account and balance.</li>
+                    <li>Account creation: Users can create a new account by giving it a name.</li>
+                    <li>Cash withdrawals: Users can withdraw money from their account.</li>
+                    <li>Deposit funds: Users can deposit money into their account.</li>
+                    <li>Transfar funds: Users can transfer money between their accounts.</li>
+                </ul>
+
+                </div>
+            </div>
+        
+        </div>
+        <div class="row2">
+
+            <h2>MusicApi (Group Project)</h2>
+
+            <p>
+                This is another group project we created at Chas Academy. This was when we learned to
+                connect a external api to our project so that we could populate our database with songs
+                from spotify. <br><br>We also made our own minimap api to interact with both the external api
+                and the database through our console client.  
+            </p>
+
+            <br>
+            <button class="git" onclick="window.location.href='https://github.com/idris-ahmed19/Grupp-projekt'">Go To Github</button>
+            <br>
+            <button class="open-modal-button" onclick="document.getElementById('modal2').style.display='block'">More Information</button>
+
+            <div id="modal2" class="modal">
+                <div class="modal-content">
+                  <span class="close" onclick="document.getElementById('modal2').style.display='none'">&times;</span>
+                  <h2>More information about MusicApi</h2>
+                  
+                  <h3>Rest-API Requests</h3>
+
+                  <ul>
+                      <li>Get all users of the system:
+                          GET https://localhost:7181/user/</li>
+                      <li>Get all genres connected to a specific user:
+                          GET https://localhost:7181/user/magda/genre/</li>
+                      <li>Get all artists connected to a specific user:
+                          GET https://localhost:7181/user/magda/artist/</li>
+                      <li>Get all songs connected to a specific user:
+                          GET https://localhost:7181/user/magda/song/
+                          </li>
+                      <li>Connect a user with a new genre:
+                          POST https://localhost:7181/user/magda/genre/2</li>
+                      <li>Connect a user with a new artist:
+                          POST https://localhost:7181/user/magda/artist/10</li>
+                      <li>Connect a user with a new song:
+                          POST https://localhost:7181/user/magda/song/2</li>
+                  </ul>
+      
+                  <h3>Endpoints for external APIs</h3>
+      
+                  <ul>
+                      <li>Spotify: get and save in Db top 10 songs for artists on Spotify's top 100 list of all time
+                          POST https://localhost:7181/spotify/Top100sTop10</li>
+                      <li>Spotify: get and save 50 songs for a chosen artist + add a description of the artist:
+                          POST https://localhost:7181/spotify/Top50Songs<br>/rammstein/desc/Konstigt tyskt band</li>
+                      <li>Ticketmaster: show upcoming concerts for a chosen artist, if found at Ticketmaster:
+                          GET https://localhost:7181/ticketmaster/behemoth
+                          GET https://localhost:7181/ticketmaster/iron maiden</li>
+                  </ul>
+
+                </div>
+              </div>
+
+        </div>
+        
+    </div>
+</body>
+</html>
