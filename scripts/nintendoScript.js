@@ -4,10 +4,16 @@ const nintendoMusicMap = {
 };
 
 let originalBackground = '';
+let currentAudio = null;
 
 function playMusicAndChangeBackground(input) {
     const characterInfo = nintendoMusicMap[input.toLowerCase()];
     if (characterInfo) {
+        if (currentAudio) {
+            currentAudio.pause();
+            currentAudio.currentTime = 0;
+        }
+
         if (!originalBackground) {
             originalBackground = document.body.style.backgroundImage;
         }
@@ -20,6 +26,8 @@ function playMusicAndChangeBackground(input) {
         audio.addEventListener('ended', () => {
             document.body.style.backgroundImage = originalBackground;
         });
+        
+        currentAudio = audio;
     }
 }
 
