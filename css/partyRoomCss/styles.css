@@ -87,3 +87,11 @@ body {
     cursor: pointer;
     color: blue;
 }
+
+.content input {
+    margin-top: 50px;
+    width: 25vh;
+    border: 2px solid black;
+    padding: 10px;
+    font-family: "Anta";
+}

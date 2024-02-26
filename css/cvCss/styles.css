@@ -14,7 +14,6 @@
 }
 
 body {
-    background-color: rgb(1, 55, 50);
     display: flex;
     margin: 0;
     flex-direction: column;
@@ -22,7 +21,7 @@ body {
 }
 
 body {
-    background-color: black;
+    background-color: lightblue;
     margin: 0px;
     display: flex;
     flex-direction: column;
@@ -46,7 +45,7 @@ body {
     font-size: 1.5rem;
     font-family: "Roboto";
     text-decoration: none;
-    color: black;
+    color: white;
     transition: color 0.3s;
 }
 
@@ -63,7 +62,7 @@ body {
 .container-sidebar {
     display: flex;
     height: 10vh;
-    background-color: white;
+    background-color: black;
     width: 100%;
 }
 
@@ -74,6 +73,7 @@ body {
     height: 100%;
     border: 2px solid black;
     padding-bottom: 2rem;
+    margin-bottom: 50px;
 }
 
 .contact-info {
@@ -113,6 +113,6 @@ body {
     margin-left: 7rem;
     font-family: "Oswald";
     margin-top: 0px;
-    font-size: 0.8rem;
-    color: darkslategray
+    font-size: 0.85rem;
+    color: black;
 }
